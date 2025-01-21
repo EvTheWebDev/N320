@@ -15,3 +15,6 @@
 ### Markdown & Documentation
 
 **Markdown**, or .MD files, are the files that README files consist of. These files have various styling methods, like **bolding** or *italicizing* text. Additionally, developers can add `code blocks` to illustrate important commands or lines of code. It is very useful to document the process in the README file, escpecially any major issues you run into. Keeping track of these issues allows you to avoid strife later, as you can use your README files as a guidebook. 
+
+### That's All! Thanks for Reading
+![](images/meme.png)
