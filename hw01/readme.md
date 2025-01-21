@@ -6,7 +6,7 @@
 
 ### Node.js Understanding
 
-
+**Node.js**, and its package manager **NPM** are critical tools for developers. Node allows developers to easily incorporate JavaScript code into their projects. Developers can set scripts in their `package.json` file to do things like run their live server, compile SASS files into CSS, and many more. NPM is a library of hundreds, if not thousands, of different packages for developers to install for their projects. These can range from things like **Git** to useful developer tools like SASS. Node is *critical* for developers.
 
 ### Version Control, Git, & GitHub
 
@@ -14,3 +14,4 @@
 
 ### Markdown & Documentation
 
+**Markdown**, or .MD files, are the files that README files consist of. These files have various styling methods, like **bolding** or *italicizing* text. Additionally, developers can add `code blocks` to illustrate important commands or lines of code. It is very useful to document the process in the README file, escpecially any major issues you run into. Keeping track of these issues allows you to avoid strife later, as you can use your README files as a guidebook. 
