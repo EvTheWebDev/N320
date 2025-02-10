@@ -1,11 +1,19 @@
 {
-  "name": "hw02",
+  "name": "n320-hw02",
   "version": "1.0.0",
   "description": "A Custom CLI tool demo for my N320 Development Course",
   "main": "index.js",
+  "bin": {
+    "cool-guy": "./bin/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cool-guy": "node bin/cli.js"
   },
   "author": "Ev The Dev",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "bin",
+    "README.md",
+    "package.json"
+  ]
 }
