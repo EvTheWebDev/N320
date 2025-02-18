@@ -48,7 +48,7 @@ function app(req, res) {
 
 const server = http.createServer(app);
 
-const port = process.env.PORT || 5445; // 3000, 3001,
+const port = process.env.PORT || 3000;
 
 server.listen(port);
 
