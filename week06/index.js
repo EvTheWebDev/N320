@@ -18,6 +18,24 @@ app.question("Name of project:", function (projectName) {
     fs.mkdirSync(projectDirectory);
   }
 
+  includeFunctionsFolder(function (makeFunctionsFolder) {
+    if (makeFunctionsFolder) {
+      fs.mkdirSync(functionsDirectory);
+
+      const webfileLibRef = path.join(___dirname, "lib/webfile.js");
+      fs.writeFileSync(
+        path.join(functionsDirectory, "webfile.js"),
+        fs.readFileSync(webfileLibRef)
+      );
+
+      const serverLibRef = path.join(___dirname, "lib/server.js");
+      fs.writeFileSync(
+        path.join(functionsDirectory, "server.js"),
+        fs.readFileSync(serverLibRef)
+      );
+    }
+  });
+
   if (!fs.existsSync(functionsDirectory)) {
     fs.mkdirSync(functionsDirectory);
   }
