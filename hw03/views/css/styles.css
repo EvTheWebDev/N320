@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #e5e2ce;
+}
+
+.content {
+  padding: 10px;
+}
+
+nav {
+  background-color: #10621d;
+  min-height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 2px 4px;
+}
