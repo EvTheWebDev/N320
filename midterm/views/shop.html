@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ev's Emporium</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/shop">Our Shop</a>
+      <a href="/404meplz">???</a>
+    </nav>
+    <div class="content">
+      <h1>Our Shop</h1>
+
+      <table class="itemList">
+        <tr class="item">
+          <td class="itemName">New Camera</td>
+          <td class="itemImg">
+            <img src="media/newCamera.png" alt="Item Image (50x50)" />
+          </td>
+          <td class="itemPrice">$149.99</td>
+          <td class="cartButtonHolder">
+            <button id="newCamera" class="button cartButton">
+              Add to Cart
+            </button>
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="itemName">36 Exp. Film Roll</td>
+          <td class="itemImg">
+            <img src="media/film.webp" alt="Item Image (50x50)" />
+          </td>
+          <td class="itemPrice">$9.99</td>
+          <td class="cartButtonHolder">
+            <button id="filmRoll" class="button cartButton">Add to Cart</button>
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="itemName">Film Developer</td>
+          <td class="itemImg">
+            <img src="media/developer.png" alt="Item Image (50x50)" />
+          </td>
+          <td class="itemPrice">$14.99</td>
+          <td class="cartButtonHolder">
+            <button id="filmDeveloper" class="button cartButton">
+              Add to Cart
+            </button>
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="itemName">Film Scans</td>
+          <td class="itemImg">
+            <img src="media/filmScan.png" alt="Item Image (50x50)" />
+          </td>
+          <td class="itemPrice">$19.99</td>
+          <td class="cartButtonHolder">
+            <button id="filmScans" class="button cartButton">
+              Add to Cart
+            </button>
+          </td>
+        </tr>
+      </table>
+      <section class="invoiceStuff">
+        <h3>Ready to Check Out?</h3>
+        <p>Generate your invoice here!</p>
+        <form id="invoiceForm">
+          <input id="name" type="text" placeholder="Name" />
+          <input id="email" type="email" placeholder="Email" />
+          <button id="submit">Submit</button>
+        </form>
+        <button id="downloadPdf" style="display: none">Download Invoice</button>
+
+        <section class="pdfPreview">
+          <iframe id="pdf-preview" frameborder="0"></iframe>
+        </section>
+        <button id="downloadPdf" style="display: none">Download Invoice</button>
+      </section>
+      <div id="alertBox" class="alertBox"></div>
+    </div>
+    <script type="module" src="app/invoice.js"></script>
+    <script type="module" src="app/PDFGenerator.js"></script>
+  </body>
+</html>
